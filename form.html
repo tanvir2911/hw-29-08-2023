@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        #fname,
+        #id_num {
+            width: 200px;
+            padding: 5px;
+        }
+
+        div {
+            margin: 30px 0;
+        }
+
+        #btn {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin-right: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Student Registration Form</legend>
+            <div class="id_num">
+                <label for="id_num">ID:</label>
+                <input type="number" name="id_num" id="id_num" placeholder="Your ID" required>
+            </div>
+            <div class="fname">
+                <label for="fname">Name:</label>
+                <textarea name="fname" id="fname" placeholder="Your Name" cols="10" rows="5" style="height:20px;"
+                    required></textarea>
+            </div>
+
+            <div class="round">
+                <label for="round">Round:</label>
+                <select name="round" id="round" placeholder="">
+                    <option value="55">55</option>
+                    <option value="56">56</option>
+                    <option value="57">57</option>
+                    <option value="58">58</option>
+                </select>
+            </div>
+
+            <div id="gender">
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <input type="radio" name="gender" value="other">Other
+            </div>
+
+            <div id="education">
+                <label for="education">Education:</label>
+                <input type="checkbox" name="education" value="ssc">SSC
+                <input type="checkbox" name="education" value="hsc">HSC
+                <input type="checkbox" name="education" value="hons">Honours
+                <input type="checkbox" name="education" value="ms">Masters
+            </div>
+        </fieldset>
+        <div id="btn">
+            <input class="btn" type="reset" value="Reset">
+            <input class="btn" type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>

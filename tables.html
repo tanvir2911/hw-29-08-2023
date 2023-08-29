@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Tables</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #table1 table,
+        #table4 table {
+            width: 100%;
+        }
+
+        #table4 tr:nth-child(3) {
+            background-color: #ADFF2F;
+        }
+
+        .fourth_col {
+            background-color: #D5EFEE;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="table1">
+        <table>
+            <caption>This is the caption</caption>
+            <colgroup>
+                <col span="1" style="background-color:red">
+                <col span="1" style="background-color:bisque">
+                <col span=" 1" style="background-color:red">
+            </colgroup>
+            <tr>
+                <th>Column1</th>
+                <th>Column2</th>
+                <th>Column3</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Row 1 Cell 1</td>
+                <td>Row 1 Cell 2</td>
+                <td>Row 1 Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2 Cell 2</td>
+                <td>Row 2 Cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Row 3 Cell 1</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <div id="table2">
+        <table>
+            <caption>This is the caption</caption>
+            <tr>
+                <th></th>
+                <th>Semester</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Jan-April</td>
+                <td>Credit</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>May-August</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>September-December</td>
+                <td>Distinction</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <div id="table3">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td>Ramesh Rahman</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Shabbir Hussein</td>
+                <td>7000</td>
+            </tr>
+        </table>
+    </div>
+    <div id="table4">
+        <h2>Colgroup</h2>
+        <p>Add the a colgroup with a col element that spans over two columns to define a style for the two columns:</p>
+        <table>
+            <caption></caption>
+            <colgroup>
+                <col span="1" style="background-color:red">
+                <col span="2">
+                <col span="1" style="background-color:red">
+
+            </colgroup>
+            <tr>
+                <th>MON</th>
+                <th>TUI</th>
+                <th>WED</th>
+                <th style="text-align:left;">THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td class="fourth_col">4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td class="fourth_col">11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td class="fourth_col">18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td class="fourth_col">25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
